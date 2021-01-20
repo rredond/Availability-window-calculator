@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="image/wave (13).svg" class="wave" />
+    <img src="image/wave (14).svg" class="wave2" alt="" />
+    <div class="container">
+      <div class="calc-container">
+        <form action="">
+          <h2>Questionnaire</h2>
+          <h3>Availability Calculator</h3>
+          <div class="input-div focus">
+            <h5>Day 1 (Month / Day / Year)</h5>
+            <input type="date" class="input" id="Day 1" placeholder="" />
+            <small>Error</small>
+          </div>
+          <div class="input-div">
+            <h5>Start Day (Day number)</h5>
+            <input
+              type="number"
+              class="input inputs start-day"
+              id="Start Day"
+              min="0"
+            />
+            <small>Error</small>
+          </div>
+          <div class="input-div" id="input">
+            <h5>End Day (Day number)</h5>
+            <input
+              type="number"
+              class="input inputs end-day"
+              id="End Day"
+              min="0"
+            />
+            <small>Error</small>
+          </div>
+          <input type="submit" class="btn" name="Calculate" value="Calculate" />
+        </form>
+      </div>
+
+      <div class="img">
+        <img src="image/undraw_Post_online_re_1b82.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="modal-container hide">
+      <div class="modal">
+        <!-- <h1>The results are:</h1> -->
+        <h2 class="display-day1">Day 1 =</h2>
+        <h2 class="display-start-date">Availability start date =</h2>
+        <h2 class="display-end-date">Availability end date =</h2>
+        <input type="submit" class="btn2" value="close" />
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.3/dayjs.min.js"
+      integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
